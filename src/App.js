@@ -9,7 +9,7 @@ const App = (props) => {
   const { isLogged, ChangeLoginStatus } = props;
   if (!isLogged) {
     postData("login.php").then((res) => {
-      console.log(res);
+      // console.log(res);
       if (res.code === 200) {
         ChangeLoginStatus(true);
       } else {
